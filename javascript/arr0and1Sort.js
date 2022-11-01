@@ -1,4 +1,7 @@
-//[0,1,1,0,0]
+// Input - [0,1,1,0,0]
+// Output - [0, 0, 0, 1, 1]
+
+// Iterate my array - count for 0, place first 0 in array as by count and rest are 1
 
 function byCount0() {    
     let arr = [0,1,1,0,0];
@@ -20,7 +23,10 @@ function byCount0() {
     console.log("function calling !!!", arr);
 }
 //byCount0();
+// O(2n)
 
+
+// Input  - [0,1,0,0,1]
 function useTwoIndexes() {
     let arr = [0,1,0,0,1];
     for (let i=0,j=arr.length-1; i < j;) {
@@ -41,5 +47,6 @@ function useTwoIndexes() {
 }
 
 useTwoIndexes();
+// O(n)
 
 
